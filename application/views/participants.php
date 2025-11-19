@@ -48,7 +48,7 @@
                   <tr>
                     <th>No.</th>
                     <th>Participant</th>
-                    <th>Department</th>
+                    <!--<th>Department</th>-->
                     <th></th>
                   </tr>
                   <?php
@@ -61,7 +61,7 @@
                     <img src="<?=base_url()?>assets/uploads/<?=($d->photo)?$d->photo:'user.jpg';?>" width="60px">
                     
                     </td> 
-                    <td><?=$d->department_name?></td>
+                    <!--<td><?=$d->department_name?></td>-->
                     <td><?=$d->name;?></td>
                     <td>
                       <div class="btn-group">

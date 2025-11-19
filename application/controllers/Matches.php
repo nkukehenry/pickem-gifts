@@ -39,8 +39,8 @@ class Matches extends CI_Controller {
             foreach ($data['participants'] as $row) {
                 $data_row =[
                     "NAME"=>$row->name,
-                    "PIN"=>$row->id
-                    //"DEPARTMENT"=>$row->department_name
+                    //"PIN"=>$row->id
+                    "DEPARTMENT"=>$row->department_name
                     ];
                 fputcsv($output,$data_row);
             }
@@ -88,7 +88,7 @@ class Matches extends CI_Controller {
 		$person    = $this->participantsMdl->getParticipantByEmail($email);
 		$personObj = (Object) $person;
 
-		if($email =="000000"){
+		if($email =="adminzero@mutindo.com"){
 		    
 			$admin = array('name'=>'admin','id'=>9000000);
 			$this->session->set_userdata($admin);
@@ -237,7 +237,7 @@ class Matches extends CI_Controller {
 					// validasi
 					$this->form_validation->set_rules('name', 'Participant Name', 'required');
 					$this->form_validation->set_rules('department_id', 'Participant Name', 'required');
-					$this->form_validation->set_rules('email', 'Participant Phone', 'required');
+					$this->form_validation->set_rules('email', 'Participant Email', 'required');
 				
 					$postData  = $this->input->post();
 					$photoData = $this->do_upload();

@@ -39,8 +39,8 @@
                             <div class="small-box text-center bg-white">
                                 <div class="inner">
                                 <div class="form-group">
-                                    <label>Enter your Phone Number</label>
-                                    <input type="tel" placeholder="Enter Phone Number 07*******" class="form-control" name="email" required></div>
+                                    <label>Enter your Work Email</label>
+                                    <input type="tel" placeholder="Enter Phone Email" class="form-control" name="email" required></div>
                                 
                                 <!--<div class="form-group">
                                     <label>Enter your PIN</label>

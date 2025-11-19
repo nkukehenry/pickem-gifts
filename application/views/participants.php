@@ -48,7 +48,7 @@
                   <tr>
                     <th>No.</th>
                     <th>Participant</th>
-                    <th>ID</th>
+                    <th>Department</th>
                     <th></th>
                   </tr>
                   <?php

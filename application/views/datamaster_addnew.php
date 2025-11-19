@@ -48,8 +48,8 @@
                   </div>
 
                   <div class="form-group">
-                    <label for="email">Participant Phone</label>
-                    <input type="text" class="form-control" name="email" id="email" placeholder="Phone..." required>
+                    <label for="email">Participant Phone/Email</label>
+                    <input type="text" class="form-control" name="email" id="email" placeholder="Phone/Email..." required>
                   </div>
                   
                   <div class="form-group">

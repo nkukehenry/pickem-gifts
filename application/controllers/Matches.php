@@ -24,7 +24,7 @@ class Matches extends CI_Controller {
 	{
 		$data['participants'] = $this->participantsMdl->list_all();
 		
-		if($_GET['export']==1){
+	if($_GET['export']==1){
 		    
     		 $csvFileName = 'santa_participants.csv';
     
@@ -50,9 +50,9 @@ class Matches extends CI_Controller {
             
             // Exit to prevent additional output
             exit;
-		}
+	    }
 		
-		$this->load->view('participants', $data);
+	   $this->load->view('participants', $data);
 	}
 
 	public function departments()
